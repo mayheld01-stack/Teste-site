@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mayara</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mayara</title>
 </head>
+
 <body>
   <header>
     <h1>Mayara</h1>
@@ -16,36 +18,36 @@
         <li><a href="https://www.linkedin.com/in/mayaraheld/" target="_blank">LinkedIn</a></li>
       </ul> <!-- Lista não ordenada para links do nosso menu. -->
     </nav>
-  </header>  
+  </header>
 
   <section>
     <h2 id="sobre-mim"> Sobre mim</h2>
 
 
-<img src="perfil.png.png"
- alt="Imagem de perfil">
-<alt="Imagem de perf" width="200" height="200">
-  
-
-<article>
-
-  <p>Olá! Eu sou a Mayara, uma aprendiz de desenvolvimento web. 
-    Estou mergulhando no mundo do desenvolvimento web e adorando descobrir como as coisas funcionam por trás de cada clique.</p>
-
-</article>
+    <img src="perfil.png.png" alt="Imagem de perfil">
+    <alt="Imagem de perf" width="200" height="200">
 
 
-<aside>
-  <h3>Aprendendo:</h3>
+      <article>
 
-  <ul> 
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-  </ul>
+        <p>Olá! Eu sou a Mayara, uma aprendiz de desenvolvimento web.
+          Estou mergulhando no mundo do desenvolvimento web e adorando descobrir como as coisas funcionam por trás de
+          cada clique.</p>
+
+      </article>
 
 
-</aside>
+      <aside>
+        <h3>Aprendendo:</h3>
+
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+
+
+      </aside>
 
   </section>
 
@@ -63,19 +65,41 @@
 
   </section>
 
-<footer>
-  <p>&copy; 2026 Mayara. Todos os direitos reservados.</p>
+  <footer>
+    <p>&copy; 2026 Mayara. Todos os direitos reservados.</p>
 
-  <section>
+    <<section id="contato"> 
     <h2>Contato</h2>
+    <p>Tem um projeto em mente? Entre em contato.</p>
+      
+    <form action="mailto:seuemail@exemplo.com" method="post" enctype="text/plain">
 
-    <address>
-       E-mail: <a href="mailto:mayara@mayara.com">mayara@mayara.com</a> <br>
-       Telefone: <a href="tel:1112345678">(11) 1234-5678</a>
-    </address>
+      <label for="nome">Nome: </label>
+      <input type="text" id="nome" name="nome" required> <br>
 
-</footer>
+      <label for="email">E-mail: </label>
+      <input type="email" id="email" name="email" required> <br>
 
-</body>
+      <label for="telefone">Telefone: </label>
+      <input type="tel" id="telefone" name="telefone"> <br>
 
-</html>
+      <label for="assunto">Assunto: </label>
+      <select name="assunto" id="assunto"> 
+        <option value="orçamento">Orçamento</option>
+        <option value="dúvida">Dúvida</option>
+        <option value="outro">Outro</option>
+      </select>
+      
+      <br><br>
+      
+      <label for="mensagem">Mensagem: </label>
+      <textarea name="mensagem" id="mensagem" cols="20" rows="5" required></textarea>
+      
+      <br>
+      <input type="submit" value="Enviar mensagem">
+      <br>
+
+      <input type="checkbox" id="inscricao" name="inscricao"> 
+      <label for="inscricao">Deseja receber minha newsletter? </label>
+
+    </form> </section>
